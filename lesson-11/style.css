@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slide-content {
+  position: relative;
+  width: 1000px;
+  height: 640px;
+  border: 1px solid silver;
+  margin: 70px auto;
+  overflow: hidden;
+}
+
+.slide-list {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slide-item {
+  min-width: 1000px;
+  height: 638px;
+  background-color: aqua;
+  margin: 1px;
+}
+
+.next {
+  position: absolute;
+  z-index: 9999999;
+  font-size: 32px;
+  right: 8px;
+  top: 45%;
+  cursor: pointer;
+}
+
+.next:active {
+  color: red;
+}
+
+.prev {
+  position: absolute;
+  z-index: 9999999;
+  font-size: 32px;
+  left: 8px;
+  top: 45%;
+  cursor: pointer;
+}
+
+.prev:active {
+  color: red;
+}
+
+/* slider */
+
+
+/* ====== ACCORDION ====== */
+
+.wrapper{
+   margin: 70px auto;
+   width: 100%;
+
+   
+}
+.accardion-tab {
+  width: 600px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: teal;
+  font-size: 22px;
+  font-weight: bold;
+  padding:0 12px;
+  margin:2px auto;
+  cursor: pointer;
+  display: flex;
+  color:#fff;
+}
+
+.accardion-content{
+   width: 600px;
+   max-height: 0px;
+   overflow: hidden;
+   margin: auto;
+   transition: all 0.3s ease;
+}
+
+
+.dot{
+   transition: all 0.3s ease;
+}
